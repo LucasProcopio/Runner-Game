@@ -36,9 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scenes\Assets\Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scenes\Assets\Scripts\Obstacle.cs" />
      <Compile Include="Assets\Scenes\Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scenes\Assets\Scripts\RepeatingBG.cs" />
+     <Compile Include="Assets\Scenes\Assets\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\Scenes\Assets\Scripts\SpawnPoint.cs" />
      <Compile Include="Assets\Scenes\Assets\Scripts\Spawner.cs" />
     <Reference Include="UnityEngine">

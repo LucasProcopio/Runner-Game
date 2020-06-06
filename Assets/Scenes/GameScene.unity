@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 34496502}
   - component: {fileID: 34496501}
   m_Layer: 0
-  m_Name: BG (4)
+  m_Name: BGTopLayer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 37309424}
   - component: {fileID: 37309423}
   m_Layer: 0
-  m_Name: BG02 (3)
+  m_Name: BGTop_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 435862129}
   - component: {fileID: 435862128}
   m_Layer: 0
-  m_Name: BG (1)
+  m_Name: BG Layer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -533,7 +533,7 @@ MonoBehaviour:
   maxHeight: 5
   minHeight: -5
   health: 3
-  effect: {fileID: 1426233153912244837, guid: ca563a87e9df74bcb818ad0d2967d9e6, type: 3}
+  effect: {fileID: 7468730983566030859, guid: cad70a713e64247f4b2ff0a925c5e997, type: 3}
 --- !u!50 &441769652
 Rigidbody2D:
   serializedVersion: 4
@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 521343186}
   - component: {fileID: 521343185}
   m_Layer: 0
-  m_Name: BG02 (1)
+  m_Name: BGLayer2_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -773,7 +773,7 @@ GameObject:
   - component: {fileID: 892933912}
   - component: {fileID: 892933911}
   m_Layer: 0
-  m_Name: BG (3)
+  m_Name: BGTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -870,7 +870,7 @@ GameObject:
   - component: {fileID: 1034437748}
   - component: {fileID: 1034437747}
   m_Layer: 0
-  m_Name: BG02 (4)
+  m_Name: BGTopLayer2_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -967,7 +967,7 @@ GameObject:
   - component: {fileID: 1045860770}
   - component: {fileID: 1045860769}
   m_Layer: 0
-  m_Name: BG02 (5)
+  m_Name: BGTopLayer3_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1114,7 +1114,7 @@ GameObject:
   - component: {fileID: 1155385889}
   - component: {fileID: 1155385888}
   m_Layer: 0
-  m_Name: BG (2)
+  m_Name: BGLayer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1211,7 +1211,7 @@ GameObject:
   - component: {fileID: 1528826901}
   - component: {fileID: 1528826900}
   m_Layer: 0
-  m_Name: BG02 (2)
+  m_Name: BGLayer3_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1405,7 +1405,7 @@ GameObject:
   - component: {fileID: 1976265414}
   - component: {fileID: 1976265413}
   m_Layer: 0
-  m_Name: BG02
+  m_Name: BG_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1502,7 +1502,7 @@ GameObject:
   - component: {fileID: 2103798766}
   - component: {fileID: 2103798765}
   m_Layer: 0
-  m_Name: BG (5)
+  m_Name: BGTopLayer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
