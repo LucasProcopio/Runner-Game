@@ -38,7 +38,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scenes\Assets\Scripts\Obstacle.cs" />
      <Compile Include="Assets\Scenes\Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Scenes\Assets\Scripts\SpawnPOint.cs" />
+     <Compile Include="Assets\Scenes\Assets\Scripts\RepeatingBG.cs" />
+     <Compile Include="Assets\Scenes\Assets\Scripts\SpawnPoint.cs" />
      <Compile Include="Assets\Scenes\Assets\Scripts\Spawner.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2019.3.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

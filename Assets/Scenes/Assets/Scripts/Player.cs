@@ -10,8 +10,8 @@ public class Player : MonoBehaviour
   public float speed = 50;
   public int maxHeight = 5;
   public int minHeight = 0;
-
   public int health = 5;
+  public GameObject effect;
   private void Awake()
   {
     speed = 50.0f;
@@ -29,10 +29,14 @@ public class Player : MonoBehaviour
 
     if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight)
     {
+      Debug.Log("MOVE UP");
+      Instantiate(effect, transform.position, Quaternion.identity);
       targetPos = new Vector2(transform.position.x, transform.position.y + yIncrement);
     }
     else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight)
     {
+      Debug.Log("MOVE UP");
+      Instantiate(effect, transform.position, Quaternion.identity);
       targetPos = new Vector2(transform.position.x, transform.position.y - yIncrement);
     }
   }
