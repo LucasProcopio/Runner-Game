@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // load scenes
 
 public class Player : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Player : MonoBehaviour
   public int maxHeight = 5;
   public int minHeight = 0;
 
+  public int health = 5;
   private void Awake()
   {
     speed = 50.0f;
@@ -17,6 +19,11 @@ public class Player : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
+
+    if (health <= 0)
+    {
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
     transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
