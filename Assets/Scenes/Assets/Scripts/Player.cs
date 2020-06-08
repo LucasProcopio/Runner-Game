@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; // load scenes
-
+using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
   private Vector2 targetPos;
@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
   public int maxHeight = 5;
   public int minHeight = 0;
   public int health = 5;
+  public Text healthDisplay;
   public GameObject effect;
   private void Awake()
   {
@@ -19,6 +20,8 @@ public class Player : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
+
+    healthDisplay.text = health.ToString();
 
     if (health <= 0)
     {
