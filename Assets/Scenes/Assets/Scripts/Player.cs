@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
   public int health = 5;
   public Text healthDisplay;
   public GameObject effect;
+
+  public GameObject gameOver;
   private void Awake()
   {
     speed = 50.0f;
@@ -25,7 +27,8 @@ public class Player : MonoBehaviour
 
     if (health <= 0)
     {
-      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+      gameOver.SetActive(true);
+      Destroy(gameObject);
     }
 
     transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
