@@ -135,6 +135,7 @@ MonoBehaviour:
   damage: 1
   speed: 1
   effect: {fileID: 1426233153912244837, guid: ca563a87e9df74bcb818ad0d2967d9e6, type: 3}
+  HitSound: {fileID: 284010920725374490, guid: e22835b2c42960e40bf0237f99ac54c9, type: 3}
 --- !u!114 &-3133416638552303699
 MonoBehaviour:
   m_ObjectHideFlags: 0

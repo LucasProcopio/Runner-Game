@@ -8,7 +8,7 @@ public class Obstacle : MonoBehaviour
   public float speed;
 
   public GameObject effect;
-
+  public GameObject HitSound;
   private void Awake()
   {
     speed = 5.5f;
@@ -29,7 +29,7 @@ public class Obstacle : MonoBehaviour
 
       // player takes damage
       other.GetComponent<Player>().health -= damage;
-      Debug.Log(other.GetComponent<Player>().health);
+      Instantiate(HitSound, transform.position, Quaternion.identity);
       Destroy(gameObject);
     }
   }

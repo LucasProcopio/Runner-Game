@@ -13,11 +13,15 @@ public class Player : MonoBehaviour
   public int health = 5;
   public Text healthDisplay;
   public GameObject effect;
-
+  public GameObject moveSound;
+  public GameObject deathSound;
   public GameObject gameOver;
+
+  public GameObject playSound;
   private void Awake()
   {
     speed = 50.0f;
+    Instantiate(playSound, transform.position, Quaternion.identity);
   }
   // Update is called once per frame
   void Update()
@@ -28,6 +32,7 @@ public class Player : MonoBehaviour
     if (health <= 0)
     {
       gameOver.SetActive(true);
+      Instantiate(deathSound, transform.position, Quaternion.identity);
       Destroy(gameObject);
     }
 
@@ -36,11 +41,13 @@ public class Player : MonoBehaviour
     if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight)
     {
       Instantiate(effect, transform.position, Quaternion.identity);
+      Instantiate(moveSound, transform.position, Quaternion.identity);
       targetPos = new Vector2(transform.position.x, transform.position.y + yIncrement);
     }
     else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight)
     {
       Instantiate(effect, transform.position, Quaternion.identity);
+      Instantiate(moveSound, transform.position, Quaternion.identity);
       targetPos = new Vector2(transform.position.x, transform.position.y - yIncrement);
     }
   }
